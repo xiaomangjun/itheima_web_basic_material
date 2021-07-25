@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .nav {
+            width: 872px;
+            height: 125px;
+
+            margin: 100px auto;
+        }
+
+        .nav li {
+            position: relative;
+            float: left;
+            width: 209px;
+            height: 125px;
+            background-color: purple;
+            margin-right: 12px;
+        }
+
+        .nav li:last-child {
+            margin-right: 0;
+        }
+
+        /* 让我们的图片和父盒子一模一样 大 */
+        .nav li img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 伪元素作为遮罩层的盒子 */
+        .nav li::after {
+            position: absolute;
+            /* 绝对定位一定要加边偏移  要不然他不移动一定要写位置 */
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .6) url(./images/arr.png) no-repeat center center;
+            /* 谁做过渡给谁加 */
+            transition: all .8s;
+            /* 盒子透明度   0~1 之间 0 完全透明 */
+            opacity: 0;
+        }
+
+        /* li:hover   a:hover */
+        /* 如果盒子(不分块级还是行内)加了浮动或者定位(绝对定位固定定位相对定位) 则可以直接设置宽度和高度 */
+        /* 鼠标经过谁  li ， 谁变色呀  after */
+        .nav li:hover::after {
+            /* 鼠标经过之后这个盒子完全显示 */
+            opacity: 1;
+        }
+
+        /* before和after 适合于用一些装饰类的不重要的小模块 */
+        .bottom {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 20px;
+            background: rgba(0, 0, 0, .5);
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <img src="./images/1.jpg" alt="">
+                <div class="bottom">在我底盘这，你就听我的</div>
+            </li>
+            <li>
+                <img src="./images/1.jpg" alt="">
+                <div class="bottom">在我底盘这，你就听我的</div>
+            </li>
+            <li>
+                <img src="./images/1.jpg" alt="">
+                <div class="bottom">在我底盘这，你就听我的</div>
+            </li>
+            <li>
+                <img src="./images/1.jpg" alt="">
+                <div class="bottom">在我底盘这，你就听我的</div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

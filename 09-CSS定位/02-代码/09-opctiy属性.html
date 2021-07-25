@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 194, 204);
+            /* opacity  0~1  让 元素 半透明  会让这个盒子和盒子里面内容完全半透明  */
+            opacity: 0.1;
+            color: #fff;
+            font-size: 40px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            /* background-color: pink; */
+            /* rgba 背景颜色半透明 只是让盒子的背景颜色半透明 而不影响里面的元素内容 */
+            background: rgba(255, 194, 204, .2);
+            color: #fff;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        pink老师
+    </div>
+
+    <div class="box1">
+        pink老师
+    </div>
+</body>
+
+</html>

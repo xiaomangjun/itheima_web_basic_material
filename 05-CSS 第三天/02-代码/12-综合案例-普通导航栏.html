@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            /* nav 是块级元素，可以让里面的行内元素 行内块元素都能水平居中 */
+            text-align: center;
+        }
+
+        .nav a {
+            /* 因为a是行内元素不可以直接设置宽度和高度，一定不要忘记转换 */
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            background-color: pink;
+            font-size: 14px;
+            /* 水平居中 */
+            text-align: center;
+            /* 垂直居中 */
+            line-height: 30px;
+            /* 取消下划线 */
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* 鼠标经过a 变化底色 */
+        .nav a:hover {
+            background-color: skyblue;
+            /* color: purple; */
+            /* text-decoration: underline; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">导航栏1</a>
+        <a href="#">导航栏2</a>
+        <a href="#">导航栏3</a>
+        <a href="#">导航栏4</a>
+        <a href="#">导航栏5</a>
+    </div>
+</body>
+
+</html>

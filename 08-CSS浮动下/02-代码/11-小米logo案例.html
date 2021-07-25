@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            overflow: hidden;
+            width: 55px;
+            height: 55px;
+            background-color: #ff6700;
+            margin: 100px;
+        }
+
+        .box a {
+            /* 儿子宽度是110 高度55 */
+            display: block;
+            width: 110px;
+            height: 55px;
+            /* background-color: pink; */
+            /* 开始是负值 */
+            margin-left: -55px;
+            /* 谁做动画给谁加 */
+            transition: all .2s;
+        }
+
+        .box a::before {
+            content: '';
+            float: left;
+            display: block;
+            width: 55px;
+            height: 55px;
+            background: url(./images/mi1.png) no-repeat center center;
+        }
+
+        .box a::after {
+            content: '';
+            float: left;
+            display: block;
+            width: 55px;
+            height: 55px;
+            background: url(./images/mi.png) no-repeat center center;
+        }
+
+        /* 鼠标经过谁， 谁左右摇摆 */
+        /* 鼠标经过是box  box里面的a 移动 */
+        .box:hover a {
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 儿子宽度是110 高度55 -->
+        <a href="#"></a>
+
+    </div>
+</body>
+
+</html>

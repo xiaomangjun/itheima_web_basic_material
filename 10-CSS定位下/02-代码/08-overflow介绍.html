@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* overflow 溢出隐藏 */
+            /* overflow: visible; */
+            /* 当内容装不开的时候，显示滚动条 装的开也有滚动条 */
+            /* overflow: scroll; */
+            /* 如果内容超出就显示滚动条，没有超出不显示滚动条 */
+            overflow: auto;
+            /* overflow: hidden; */
+
+            /* overflow 会触发BFC ，bfc 不会有外边距塌陷的问题以及具有清除浮动的能力 */
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        我是溢出的文字需要做一些隐藏工作
+        我是溢出的文字需要做一些隐藏工作
+        我是溢出的文字需要做一些隐藏工作
+        我是溢出的文字需要做一些隐藏工作
+        我是溢出的文字需要做一些隐藏工作
+        我是溢出的文字需要做一些隐藏工作
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*花费时间 second 秒 单位 不要拉下了 */
+            /* transition: height 2s ease 1s; */
+            /* all 所有属性 */
+            /* transition: all 2s; */
+            /* 谁做过渡给谁加 */
+            /* transition: height 2s, width 2s, background-color 2s; */
+            /* 最简单写法 */
+            transition: 2s;
+        }
+
+        .box:hover {
+            height: 400px;
+            width: 400px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

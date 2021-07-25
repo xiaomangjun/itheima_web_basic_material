@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 正常情况下，类选择器的选中比标签选择器级别高 */
+        p {
+            color: red;
+        }
+
+        /* 爸爸厉害，跟孩子没啥关系 */
+        .nav {
+            color: green !important;
+
+        }
+
+        /* 继承过来的优先级是 0   */
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <p>我是继承权重</p>
+    </div>
+</body>
+
+</html>

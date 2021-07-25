@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            height: 41px;
+            /* background-color: pink; */
+            /* 上边框 */
+            border-top: 3px solid #f98b11;
+            border-bottom: 1px solid #edeef0;
+        }
+
+        .nav a {
+            /* a属于行内元素没有大小，必须转换 */
+            /* display: block; */
+            display: inline-block;
+            width: 80px;
+            height: 41px;
+            /* background-color: pink; */
+            /* 水平居中 */
+            text-align: center;
+            /* 垂直居中 */
+            line-height: 41px;
+            font-size: 14px;
+            color: #4c4c4c;
+            /* 取消下划线 */
+            text-decoration: none;
+        }
+
+        /* 鼠标进过a 底色变化， 文字的颜色也变化 */
+        .nav a:hover {
+            background-color: #edeef0;
+            color: #f98b11;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="#">新浪导航</a>
+        <a href="#">新浪导航</a>
+        <a href="#">新浪导航</a>
+        <a href="#">新浪导航</a>
+    </div>
+</body>
+
+</html>

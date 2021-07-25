@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.小括号里面写数字几，就可以选择第一个孩子 */
+        /* ul li:nth-child(2) {
+            color: red;
+        }
+
+        ul li:nth-child(5) {
+            color: red;
+        } */
+        /* 2.小括号里面可以跟关键词  even 偶数   odd 奇数 */
+        /* ul li:nth-child(even) {
+            background-color: #ccc;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: #eee;
+        } */
+        /* 3. 小括号里面可以跟公式  里面的字母只能是n  */
+        /* n默认从 0 开始依次自动累加 1  */
+        /* ul li:nth-child(n) {
+            background-color: pink;
+        } */
+        /* 此时的2n == even  2的倍数   5n 就是5的倍数 */
+        /* ul li:nth-child(5n) {
+            background-color: pink;
+        } */
+        /* ul li:nth-child(2n+1) {
+            background-color: pink;
+        } */
+        /* 选择前面3个   */
+        /* ul li:nth-child(-n+3) {
+            background-color: pink;
+        } */
+        /* n+3 从第3个开始往后找 */
+        ul li:nth-child(n+3) {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1孩子</li>
+        <li>我是第2孩子</li>
+        <li>我是第3孩子</li>
+        <li>我是第4孩子</li>
+        <li>我是第5孩子</li>
+        <li>我是第6孩子</li>
+    </ul>
+</body>
+
+</html>

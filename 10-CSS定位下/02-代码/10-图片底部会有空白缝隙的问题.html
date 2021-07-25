@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid red;
+
+        }
+
+        .box img {
+
+            /* 1. 图片底部的空白缝隙我们怎么解决呢 */
+            /* vertical-align: bottom; */
+            /* vertical-align: middle; */
+            /* vertical-align: top; */
+            /* 因为在低版本浏览器 ie6只要给 图片加 链接， 图片默认就有蓝色边框 */
+            border: 0;
+
+            /* 块级元素会和文字的基线对齐吗 */
+            /* 2. 把图片转换为块级元素，则不会有底部的空白缝隙啦 */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="./images/1.jpg" alt="">
+    </div>
+</body>
+
+</html>

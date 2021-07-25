@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            /* background-color: pink; */
+            /* 连写默认有个背景颜色是透明色  所以把上面的背景颜色覆盖掉了*/
+            /* background: url(./images/1.jpg) no-repeat; */
+            /* 1. 单独写的样式一定要写到连写的下面  先大后小 */
+            /* background-color: pink; */
+            /* 2. 同学们很容易出错误的地方 */
+            /* 因为是背景图片，不能出现是否平铺 */
+            background-image: url(./images/1.jpg) no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

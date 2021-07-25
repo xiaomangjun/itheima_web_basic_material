@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .nav {
+            width: 640px;
+            height: 50px;
+            background-color: pink;
+            margin: 30px auto;
+        }
+
+        .nav ul li {
+            float: left;
+        }
+
+        .nav ul li a {
+            display: block;
+            width: 80px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav ul li a:hover {
+            background-color: green;
+        }
+
+        /* 1. 一定是li浮动，因为是li是块元素，需要他们在一行上，a是行内元素，不需要浮动就在一行上 */
+        /* 2. 我们给a大小，因为我想鼠标经过，变色 并且显示小手 */
+        /* 3. a有了大小，所以li可以不用给大小，因为可以让a撑开 */
+        /* 4.以后的导航栏按照这个结构来做 你会看起来非常的专业 */
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="#">新闻1</a></li>
+            <li><a href="#">新闻2</a></li>
+            <li><a href="#">新闻3</a></li>
+            <li><a href="#">新闻4</a></li>
+            <li><a href="#">新闻5</a></li>
+            <li><a href="#">新闻6</a></li>
+            <li><a href="#">新闻7</a></li>
+            <li><a href="#">新闻8</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

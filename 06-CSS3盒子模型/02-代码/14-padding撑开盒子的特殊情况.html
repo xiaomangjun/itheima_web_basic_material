@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /* 1. 问 son盒子宽度默认是多少？ 200 是继承吗？  */
+        .son {
+            /* width: 100%; */
+            height: 50px;
+            background-color: purple;
+            padding: 10px;
+            /* 加了padding值之后，宽度没变，高度变了 */
+            /* 子盒子我没有写宽，现在没有撑开盒子  而高度写了 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">
+            子盒子
+        </div>
+    </div>
+</body>
+
+</html>

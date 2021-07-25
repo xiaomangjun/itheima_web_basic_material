@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+
+            width: 500px;
+            /* 1.是不是我们使用了浮动，就一定要清除浮动呢 如果父盒子有高度 */
+            /* 直接写高度 */
+            /* height: 200px; */
+            background-color: pink;
+            /* 让孩子撑开 */
+        }
+
+        /* 不是每个父亲都给高度的 */
+        .footer {
+            width: 600px;
+            height: 300px;
+            background-color: black;
+        }
+
+        .box1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+
+        .box2 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        .clear {
+            /* 清除浮动 */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="box1">大毛</div>
+        <div class="box2">二毛</div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">底部盒子</div>
+</body>
+
+</html>

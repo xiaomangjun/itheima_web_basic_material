@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul li:nth-child(2) {
+            color: red;
+        } */
+        /* ul li:nth-of-type(even) {
+            color: red;
+        } */
+
+        /* 目前一偶一样 */
+        /* nth-child 不分标签 一视同仁 给所有的标签依次排号 */
+        /* ul li:nth-child(2) {
+            color: red;
+        } */
+        /* ul p:nth-child(1) {
+            color: red;
+        } */
+
+        /* li:nth-of-type  类型  把所有的小li 排号，按照顺序选择  */
+        /* ul li:nth-of-type(2) {
+            color: blue;
+        } */
+        /* ul p:nth-child(4) {
+            color: red;
+        } */
+        /* 先选择相同规定的标签，在排号  */
+        ul p:nth-of-type(2) {
+            color: blue;
+        }
+
+        /* 结论   注意 nth-child    区别 看面试宝典的时候在复习 */
+    </style>
+</head>
+
+<body>
+    <ul>
+        <p>我要放个屁</p>
+        <li>文字内容</li>
+        <li>文字内容</li>
+        <p>我要放个屁</p>
+        <li>文字内容</li>
+        <li>文字内容</li>
+        <li>文字内容</li>
+        <li>文字内容</li>
+    </ul>
+    <div>
+        <p></p>
+        <span></span>
+        <div></div>
+    </div>
+</body>
+
+</html>

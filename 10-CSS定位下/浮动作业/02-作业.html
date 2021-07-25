@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* c3盒子模型， padding和border不撑开盒子了 */
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .goods {
+            width: 1200px;
+            height: 322px;
+
+            margin: 100px auto;
+        }
+
+        /* 伪类 类权重都是 10  这个是 22 */
+        .goods ul li:last-child {
+            margin-right: 0;
+        }
+
+        /* 这个权重是12 */
+        .goods ul li {
+            float: left;
+            width: 232px;
+            height: 322px;
+            transition: all .2s;
+            margin-right: 10px;
+        }
+
+
+        .goods ul li:hover {
+            margin-top: -5px;
+            box-shadow: 0 15px 30px rgb(0 0 0 / 40%);
+        }
+
+        .pic {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .goods h4 {
+            font-size: 14px;
+            color: #666;
+            font-weight: 400;
+            padding: 40px 20px 15px;
+        }
+
+        .goods p {
+            padding-left: 20px;
+            font-size: 12px;
+            color: red;
+        }
+
+        .goods p strong {
+            font-size: 14px;
+        }
+
+        .goods a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="goods">
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="pic">
+                        <img src="./images/goods_1.webp" alt="">
+                    </div>
+                    <h4>华为 HUAWEI nova 5i 后置AI四摄 极点全面屏 前置 2400万</h4>
+                    <p>￥<strong>1999</strong>.00</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="pic">
+                        <img src="./images/goods_1.webp" alt="">
+                    </div>
+                    <h4>华为 HUAWEI nova 5i 后置AI四摄 极点全面屏 前置 2400万</h4>
+                    <p>￥<strong>1999</strong>.00</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="pic">
+                        <img src="./images/goods_1.webp" alt="">
+                    </div>
+                    <h4>华为 HUAWEI nova 5i 后置AI四摄 极点全面屏 前置 2400万</h4>
+                    <p>￥<strong>1999</strong>.00</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="pic">
+                        <img src="./images/goods_1.webp" alt="">
+                    </div>
+                    <h4>华为 HUAWEI nova 5i 后置AI四摄 极点全面屏 前置 2400万</h4>
+                    <p>￥<strong>1999</strong>.00</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="pic">
+                        <img src="./images/goods_1.webp" alt="">
+                    </div>
+                    <h4>华为 HUAWEI nova 5i 后置AI四摄 极点全面屏 前置 2400万</h4>
+                    <p>￥<strong>1999</strong>.00</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

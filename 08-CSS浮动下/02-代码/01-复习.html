@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* margin-left: 40px; */
+            /* 外边距合并的问题 */
+            margin: auto;
+            text-align: center;
+        }
+
+        /* 我要选第三个孩子 */
+        ul li:nth-child(3n) {
+            background-color: pink;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .box1::before {
+            content: "我";
+        }
+
+        .box1::after {
+            content: "pink";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span>文字</span>
+    </div>
+    <ul>
+        <li>第1个孩子</li>
+        <li>第2个孩子</li>
+        <li>第3个孩子</li>
+        <li>第4个孩子</li>
+        <li>第5个孩子</li>
+        <li>第6个孩子</li>
+        <li>第7个孩子</li>
+        <li>第8个孩子</li>
+    </ul>
+    <div class="box1">是</div>
+</body>
+
+</html>

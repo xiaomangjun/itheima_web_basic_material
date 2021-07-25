@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input {
+            width: 300px;
+            height: 35px;
+            border: 1px solid #ccc;
+            border-radius: 18px;
+            /* 当我们表单获得光标的时候，取消默认的轮廓线  */
+            outline: none;
+            padding-left: 15px;
+            /* 谁做过渡给谁加 */
+            transition: all .3s;
+        }
+
+        input:hover {
+            border: 1px solid #333;
+        }
+
+        /* 伪类选择器 focus  选择得到光标的表单--- 当我们光标定到了表单里面 */
+        input:focus {
+            border: 1px solid #ff4500;
+            width: 400px;
+
+        }
+
+        textarea {
+            margin-top: 50px;
+            width: 550px;
+            height: 90px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            padding: 10px;
+            color: #666;
+            /* 不允许用户拖拽文本域 */
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="请输入你想要的笔记本">
+
+    <br>
+    <textarea>有啥话和pink老师说</textarea>
+</body>
+
+</html>

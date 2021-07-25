@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 块级盒子必须有宽度 */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 1.margin: 0 auto; */
+            /* 2.margin: auto; */
+            /* 只要保证块级盒子左右的 margin 值改为 auto就阔以了 */
+            /* margin: 100px auto; */
+            /* 为什么margin左右auto了就可以实现 水平居中？ */
+            /* 呕吐 自动的意思 */
+            /* 左侧的距离 自动占满 */
+            margin-left: auto;
+            /* 右侧的距离 自动占满 */
+            margin-right: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* 清除浏览器默认标签的内外边距 */
+            /* 这句话一定不要忘记写 */
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 502px;
+            height: 402px;
+            /* background-color: pink; */
+            border: 1px solid #ccc;
+            padding: 40px 30px 0;
+        }
+
+        .box h3 {
+            height: 40px;
+            border-bottom: 1px solid #ccc;
+            font-size: 20px;
+        }
+
+        /* 因为页面中所有的小li都要去掉小圆点 */
+        ul {
+            list-style: none;
+        }
+
+        .box ul li {
+            height: 50px;
+            border-bottom: 1px dashed #ccc;
+            /* 行高等于高 */
+            line-height: 50px;
+            padding-left: 30px;
+        }
+
+        .box ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .box ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>最新文章/New Aritcles</h3>
+        <ul>
+            <li><a href="#">北京招聘网页设计，平面设计，php</a></li>
+            <li><a href="#">体验javascript的魅力</a></li>
+            <li><a href="#">jquery世界来临</a></li>
+            <li><a href="#">前端程序员的梦想</a></li>
+            <li><a href="#">你想月薪过万吗，快快来把！</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

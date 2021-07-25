@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+
+            width: 500px;
+            background-color: pink;
+            /* 让孩子撑开 */
+        }
+
+        /* 不是每个父亲都给高度的 */
+        .footer {
+            width: 600px;
+            height: 300px;
+            background-color: black;
+        }
+
+        .box1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+
+        .box2 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        /* 公共的类 */
+        /* 实际上就是额外标签法的升级版本 */
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 子不教，父之过 -->
+    <div class="father clearfix">
+        <div class="box1">大毛</div>
+        <div class="box2">二毛</div>
+
+    </div>
+    <div class="footer">底部盒子</div>
+</body>
+
+</html>

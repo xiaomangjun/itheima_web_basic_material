@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 357px;
+            height: 300px;
+            /* background-color: pink; */
+            margin: 100px auto 0;
+            text-align: center;
+        }
+
+        .logo {
+            display: inline-block;
+            width: 49px;
+            height: 49px;
+            margin-top: 20px;
+            background: #ff5b00 url(./images/mi-logo.png) no-repeat;
+        }
+
+        .box h2 {
+            font-size: 25px;
+            font-weight: 400;
+            margin: 15px 0 40px;
+        }
+
+        .box input {
+            width: 357px;
+            height: 50px;
+            border: 1px solid #ccc;
+            padding-left: 12px;
+            /* 取消轮廓线 */
+            outline: none;
+        }
+
+        .pwd {
+            margin: 12px 0 22px;
+        }
+
+        .box button {
+            width: 357px;
+            height: 50px;
+            border: 0;
+            background-color: #ff5b00;
+            color: #fff;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="logo"></div>
+        <h2>小米账号登录</h2>
+        <input type="text" placeholder="请输入" class="uname">
+        <input type="password" placeholder="密码" class="pwd">
+        <button>登录</button>
+    </div>
+</body>
+
+</html>

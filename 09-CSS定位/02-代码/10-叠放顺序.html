@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,
+        .box2,
+        .box3 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 1. z-index可以提高我们的层级， 数值越大靠靠上 */
+
+        /* 2. 后面的数字是整数而且不跟单位 */
+        /* 3. 只有定位才能使用这个属性 */
+        .box1 {
+            background-color: pink;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+        }
+
+        .box2 {
+            background-color: purple;
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+        }
+
+        .box3 {
+            background-color: skyblue;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">大毛</div>
+    <div class="box2">二毛</div>
+    <div class="box3">三毛</div>
+</body>
+
+</html>

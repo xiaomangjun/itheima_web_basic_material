@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            border: 10px solid red;
+            padding: 30px;
+            /* box-sizing: content-box; 默认的 */
+            /* css3 内减模式 */
+            box-sizing: border-box;
+            /* css3 这句话眼中 width = border+padding+内容 */
+            /* 有了这句话 border和padding 不会撑开盒子了 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

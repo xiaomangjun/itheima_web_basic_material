@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            /* 之所以行内块中间有缝隙，是因为我们竖着写，就有了空格(换行) */
+            /* 保留了一个空格的距离 */
+            /* 如果不想要空格怎么办？ */
+            /* 1. 横着写 */
+            /* 2.给行内块的父亲，添加 font-size: 0; 不常用，能看懂即可 */
+            /* 3. 浮动 */
+            font-size: 0;
+        }
+
+        .nav a {
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            background-color: pink;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">百度</a>
+        <a href="#">新浪</a>
+        <a href="#">搜狐</a>
+
+
+    </div>
+</body>
+
+</html>

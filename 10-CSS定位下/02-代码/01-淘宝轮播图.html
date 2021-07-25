@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .tb {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+        }
+
+        /* 并集选择器集体声明相同的样式 */
+        .left,
+        .right {
+            /* 有了绝对定位的盒子还需要转换吗 */
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            background: rgba(0, 0, 0, .6);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .left {
+            left: 0;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .right {
+            right: 0;
+            border-radius: 15px 0 0 15px;
+        }
+
+        .circle {
+            position: absolute;
+            left: 50%;
+            margin-left: -35px;
+            bottom: 15px;
+            width: 70px;
+            height: 13px;
+            background: rgba(255, 255, 255, .4);
+            border-radius: 8px;
+        }
+
+        .circle li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+            /* 一定要记住的 */
+            cursor: pointer;
+        }
+
+        /* 要提高权重 */
+        .circle .active {
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb">
+        <!-- 滚动的图片 -->
+        <ul>
+            <li>
+                <a href="#"> <img src="./images/1.jpg" alt=""></a>
+            </li>
+        </ul>
+        <!-- 左右按钮  -->
+        <a href="#" class="left">&lt;</a>
+        <a href="#" class="right">&gt;</a>
+        <!-- 小圆点模块 -->
+        <ul class="circle">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="active"></li>
+        </ul>
+    </div>
+</body>
+
+</html>

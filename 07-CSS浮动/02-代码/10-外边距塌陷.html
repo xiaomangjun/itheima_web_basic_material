@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 如果两个**垂直**的外边距 会发生折叠现象， 以最大的值为准 */
+        /* 只能去避免开  尽量只给一个盒子添加外边距 */
+        .damao {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-bottom: 50px;
+        }
+
+        .ermao {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="damao">大毛</div>
+    <div class="ermao">二毛</div>
+</body>
+
+</html>

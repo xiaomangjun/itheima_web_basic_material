@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 头部 */
+        .top {
+            height: 84px;
+            /* background-color: #020216;
+            background-image: url(./images/wang.webp); */
+            /* 不平铺 */
+            /* background-repeat: no-repeat; */
+            /* 背景位置调整为水平居中 垂直居中 */
+            /* background-position: center center; */
+            background: #020216 url(./images/wang.webp) no-repeat center center;
+        }
+
+        /* 主体部分 */
+        .main {
+            height: 1080px;
+            /* background-color: pink;
+            background-image: url(./images/bg.webp); */
+            /* 不平铺 */
+            /* background-repeat: no-repeat; */
+            /* 背景位置  这个大的背景图片 水平居中 垂直靠上 */
+            /* background-position: center top; */
+            background: url(./images/bg.webp) no-repeat center top;
+        }
+
+        /* 底部模块 */
+        .footer {
+            height: 100px;
+            background-color: #121010;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        .footer a {
+            color: #fff;
+            /* 取消下划线 */
+            text-decoration: none;
+        }
+
+        /* 鼠标进过a 显示下划线  */
+        .footer a:hover {
+
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="top">
+
+    </div>
+
+    <!-- 页面主要的部分 -->
+
+    <div class="main"></div>
+
+    <!-- 底部模块 -->
+    <div class="footer">
+        <br>
+        <a href="#">腾讯公司</a> | <a href="#">版权所有</a> |
+        <a href="#">市场合作</a> <br>
+
+        Copyright © 1998 - 2020 Tencent. All Rights Reserved.
+    </div>
+</body>
+
+</html>

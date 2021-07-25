@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input {
+            border: 1px solid red;
+        } */
+        /* 属性选择器 [属性=值] */
+        input[type=password] {
+            border: 1px solid red;
+        }
+
+        img[alt] {
+            width: 200px;
+        }
+
+        /* .icon1,
+        .icon2,
+        .icon3 {
+            color: red;
+        } */
+        /* .ic {
+
+        } */
+        /* 选择class类名 以icon开头的 */
+        /* div[class^=icon] {
+            color: red;
+        }
+
+        div[class^=box] {
+            color: blue;
+        } */
+        /* div[class$=iconmoon] {
+            color: red;
+        } */
+        /* 类名中只要包含icon就可以了，跟位置没关系 */
+        div[class*=icon] {
+            color: red;
+        }
+
+        /* 类 伪类  属性选择器权重都是 10 */
+        /* 选择器的权重 */
+        /* 1.  继承和 *  权重是 0 */
+        /* 2. 标签选择器   伪元素 before和after    权重是1 */
+        /* 3.  类 伪类  属性选择器权重都是 10  */
+        /* 4. id  100 */
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <input type="text">
+    <input type="password">
+    <input type="button" value="按钮">
+    <img src="./images/1.jpg">
+    <img src="./images/1.jpg" alt="">
+    <div class="icon1">这是第一个小图标</div>
+    <div class="icon2">这是第二个小图标</div>
+    <div class="icon3">这是第三个小图标</div>
+    <div class="box-iconmoon">box</div>
+    <div class="icon1-iconmoon">box</div>
+    <div class="box">box</div>
+</body>
+
+</html>

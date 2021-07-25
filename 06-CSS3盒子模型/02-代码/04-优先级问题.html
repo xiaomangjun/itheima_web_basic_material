@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浏览器默认的样式 好比是浏览器自己 a 声明了这个颜色 */
+        a {
+            color: rgb(0, 0, 238);
+        }
+
+
+        .nav ul li {
+            color: red;
+        }
+
+        /* 把最后一个li 新闻改为 蓝色 */
+        .nav .last {
+            color: blue;
+        }
+
+        p {
+            color: red !important;
+
+        }
+
+        /* 我们自己的样式 */
+        a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>体育</li>
+            <li>体育</li>
+            <li>体育</li>
+            <li>体育</li>
+            <li class="last">新闻</li>
+        </ul>
+    </div>
+    <p>
+        <!-- 继承的权重是 0 -->
+        <a href="#">我是链接</a>
+    </p>
+
+</body>
+
+</html>

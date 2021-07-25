@@ -1,0 +1,6 @@
+/* 这是一个css文件 里面不需要任何的标签 */
+div {
+    color: red;
+    font-size: 20px;
+    width: 500px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            /* 浮动的盒子会压住下面标准流的盒子，但是浮动的元素不会压住文字 图片 表单等 */
+            /* 因为浮动最初的梦想做一个文字环绕效果的 */
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-right: 10px;
+        }
+
+        .two {
+            /* margin: auto 居中对齐对他失效了 */
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">浮动</div>
+    <div class="two">标准流</div>
+</body>
+
+</html>

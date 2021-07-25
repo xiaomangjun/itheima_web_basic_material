@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 定位模式 + 边偏移 */
+            /* static静态定位  具有标准流的特点  是没有边偏移的 */
+            /* position: static; */
+
+            /* 相对定位 + 边偏移 */
+            /* 1. 不脱标 占位置 */
+            /* 2. 提升了层级 */
+            /* 3. 相对于自己原来的位置移动的   自恋型 */
+            position: relative;
+            top: 10px;
+            left: 50px;
+
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* margin: 100px; */
+
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1. 我们以前学的都是标准流 -->
+    <!-- 2. 我们想要多个块级元素一行显示，可以用浮动布局 -->
+    <!-- 3. 新的布局方式， 定位  可以把元素定位到想要的位置 -->
+    <!-- 完整的网页布局： 标准流 +  浮动 +  定位  -->
+    <div class="box"></div>
+    <div class="box1">下</div>
+</body>
+
+</html>

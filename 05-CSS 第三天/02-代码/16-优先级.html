@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue {
+            color: blue;
+        }
+
+        div {
+            color: red !important;
+        }
+
+        #green {
+            color: green;
+        }
+
+        /* 选择器是有优先级的，谁的优先级高，就执行谁的样式 */
+    </style>
+</head>
+
+<body>
+    <div class="blue" id="green" style="color: skyblue;">优先级非常重要</div>
+</body>
+
+</html>

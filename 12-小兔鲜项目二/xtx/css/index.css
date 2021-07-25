@@ -1,0 +1,290 @@
+/* index 里面的是首页的样式内容 */
+/* 入口模块 */
+.entry {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+/* 轮播图 banner */
+.banner {
+    position: relative;
+    height: 500px;
+    background-color: pink;
+}
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    width: 45px;
+    height: 45px;
+    background-color: pink;
+    background: rgba(0,0,0,.3)  url(../images/sprites.png) no-repeat;
+    border-radius: 50%;
+}
+.prev {
+    left: 260px;
+     background-position: 14px -59px;
+}
+.next {
+    right: 10px;
+    background-position: -23px -59px;
+    
+}
+/* 小圆点 */
+.circle {
+    position: absolute;
+    bottom: 30px;
+    left: 680px;
+}
+.circle li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    margin-right: 15px;
+    border-radius: 50%;
+    /* 鼠标经过过li显示小手 */
+    cursor: pointer;
+}
+.circle .active {
+    background: rgba(255,255,255,1);
+}
+.entry .container {
+    position: relative;
+}
+/* 侧边栏 category 分类 */
+.category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0,0,0, .8);
+}
+.category ul li a {
+    position: relative;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 36px;
+    font-size: 14px;
+    color: #fff; 
+}
+.category ul li a:hover {
+    background-color: #27ba9b;
+}
+.category ul li a em {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+/* 侧边栏 右箭头 */
+.category ul li a::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    width: 6px;
+    height: 14px;
+    background: url(../images/sprites.png) no-repeat -41px -108px;
+}
+.box-hd {
+    margin-top: 40px;
+    height: 60px;
+
+}
+.box-hd h3 {
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+}
+.box-hd h3 small {
+    font-size: 16px;
+    color: #999;
+    margin-left: 20px;
+}
+.box-hd .more {
+    float: right;
+    margin-top: 10px;
+}
+.box-hd .more::after {
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin-left: 10px;
+    background: url(../images/sprites.png) no-repeat 0 -109px;
+}
+.box-bd {
+    height: 408px;
+}
+.box-bd ul li {
+    position: relative;
+    /* 这个不要忘记了 */
+    top: 0;
+    float: left;
+    width: 304px;
+    height: 408px;
+    margin-right: 8px;
+    background-color: #f0f9f4;
+    text-align: center;
+    transition: all .3s;
+}
+.renqi .box-bd ul li {
+    background-color: #fff;
+}
+/* 鼠标进过li盒子往上走， 添加盒子阴影 */
+.box-bd ul li:hover {
+    top: -5px;
+    box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+
+.box-bd ul li:last-child {
+    margin-right: 0;
+}
+.box-bd ul li img {
+    width: 304px;
+    height: 305px;
+}
+.box-bd ul li h4 {
+    margin: 18px 0 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+.box-bd ul li p {
+    font-size: 17px;
+    color: #9a2e1f
+}
+.box-bd ul li p span {
+    font-size: 23px;
+}
+.box-bd .new {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 29px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #27ba9b;
+    line-height: 22px;
+   
+}
+.box-bd ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    color: #999;
+}
+
+/* 小导航栏 */
+.box-hd ul {
+    float: left;
+    margin-left: 635px;
+    margin-top: 9px;
+}
+.box-hd ul li {
+    float: left;
+}
+.box-hd ul li a {
+    padding: 0 12px;
+}
+.box-hd  ul li a:hover {
+    background-color: #27ba9b;
+    color: #fefbfc;
+}
+
+/* goods模块 */
+.goods {
+    height: 610px;
+
+}
+.goods-l {
+    float: left;
+    width: 240px;
+    height: 610px;
+
+}
+.goods-l img {
+    width: 240px;
+    height: 610px;
+}
+.goods-r {
+    float: left;
+    width: 1000px;
+    height: 610px;
+
+}
+.goods-r ul li {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 304px;
+    /* 原先就有2像素的透明边框 */
+    border: 2px solid transparent;
+    margin-left: 10px;
+    transition: all .5s;
+}
+
+.goods-r ul li:hover {
+    border: 2px solid #27ba9b;
+}
+.pic {
+    height: 200px;
+
+    padding: 0 20px;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+}
+.goods-r ul li h4 {
+    margin: 0 25px;
+    font-weight: 400;
+}
+.goods-r ul li p {
+    margin: 0 25px;
+}
+.goods-r .price {
+     margin: 0 25px;
+     font-size: 17px;
+     color: #9a2e1f;
+}
+.goods-r .price  span {
+    font-size: 22px;
+}
+.find-baby {
+    position: absolute;
+   bottom: -87px;
+    left: 0;
+    height: 84px;
+    width: 100%;
+    background-color: #27ba9b;
+    padding: 10px 55px 0;
+    text-align: center;
+    color: #fff;
+    transition: all .2s;
+}
+.find-baby h5 {
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 7px;
+    font-weight: 400;
+}
+.goods-r .find-baby  p {
+    font-size: 13px;
+    margin: 5px 0 0;
+}
+/* 当我们鼠标经过 li ,让 baby这个盒子往上走 */
+.goods-r ul li:hover .find-baby {
+    bottom: 0;
+}
+
+

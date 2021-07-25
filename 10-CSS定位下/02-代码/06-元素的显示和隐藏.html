@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1,
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box1 {
+            /* 1.隐藏元素 不是删除元素  不占位置 人死了，钱也没了*/
+            /* display: none; */
+            /* 显示元素  这里是显示元素  */
+            /* display: block; */
+            /* 2. 隐藏元素  不删除元素   保留位置的 人死了，钱没花了*/
+            /* visibility: hidden; */
+            visibility: visible;
+        }
+
+        .box2 {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+</body>
+
+</html>

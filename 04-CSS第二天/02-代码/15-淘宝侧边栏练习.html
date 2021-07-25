@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 取消li 前面的小圆点 */
+        li {
+            list-style: none;
+        }
+
+        .nav li {
+            width: 190px;
+            height: 35px;
+            /* background-color: pink; */
+            /* 我要让li里面的文字水平和垂直居中  */
+            /* 水平居中 */
+            text-align: center;
+            /* 垂直居中 */
+            line-height: 35px;
+        }
+
+        /* 接下来我要修饰文字的大小为 14 颜色为 #666 取消下划线  链接的文字需要单独修饰 */
+        /* .nav li a 这样写，里面的链接的文本只限于 nav盒子里面有效 */
+        .nav li a {
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+        }
+
+        /* 鼠标经过小li li的背景颜色发生变化 */
+        .nav li:hover {
+            background-color: #ffe4dc;
+        }
+
+        /* 鼠标进过小li 但是 是li 里面的 a 变色 */
+        .nav li:hover a {
+            color: #ff5000;
+        }
+
+        /* 鼠标进过a 链接，链接有下划线 */
+        .nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>
+            <a href="#">女装 / 内衣 / 家居</a>
+        </li>
+        <li>
+            <a href="#">女装 / 内衣 / 家居</a>
+        </li>
+        <li>
+            <a href="#">女装 / 内衣 / 家居</a>
+        </li>
+        <li>
+            <a href="#">女装 / 内衣 / 家居</a>
+        </li>
+        <li>
+            <a href="#">女装 / 内衣 / 家居</a>
+        </li>
+
+    </ul>
+</body>
+
+</html>

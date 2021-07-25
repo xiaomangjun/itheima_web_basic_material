@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            color: red;
+            font-size: 14px;
+        }
+
+        p {
+            color: red;
+            font-size: 14px;
+        } */
+        /* 如果有多个样式相同的，可以采取 并集选择器 */
+        /* 逗号 和  div 和 p  修饰了相同的样式 */
+        div,
+        p,
+        .last,
+        ul li {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>我是div</div>
+    <div>我是div</div>
+    <div>我是div</div>
+    <p>我是屁</p>
+    <p>我是屁</p>
+    <span>我是span</span>
+    <span>我是span</span>
+    <span class="last">我是span</span>
+    <ul>
+        <li>再添加一组</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li {
+            color: red;
+        } */
+        /* 我只想让ul里面的小li变化颜色 */
+        /* 此时时代选择器可以解决  非常多 非常多 */
+        /* 查找规则：  第一步先查找小li  最终选择的是小li */
+        /* 第二看限定父级 */
+        ul li {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <!-- <p>变态</p> -->
+        <li>榴莲</li>
+        <li>榴莲</li>
+        <li>榴莲</li>
+        <li>榴莲</li>
+
+        <ul>
+            <li>123123</li>
+        </ul>
+
+    </ul>
+    <ol>
+        <li>张三</li>
+        <li>李四</li>
+        <li>王五</li>
+    </ol>
+</body>
+
+</html>

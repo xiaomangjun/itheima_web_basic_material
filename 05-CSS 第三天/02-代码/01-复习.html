@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+        }
+
+        .nav li {
+            width: 190px;
+            height: 35px;
+            /* background-color: pink; */
+            text-align: center;
+            line-height: 35px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* 遇到链接 我们直接给a修饰样式，不要给父盒子修饰 */
+        .nav li a {
+            font-size: 14px;
+            color: #666;
+            text-decoration: none;
+        }
+
+        /* 鼠标放到小li上  小li变底色 */
+        .nav li:hover {
+            background-color: pink;
+            color: #ff5000;
+        }
+
+        /* 鼠标进过小li  然后呢， 小li 里面的 a 变色 */
+        .nav li:hover a {
+            color: #ff5000;
+        }
+
+
+        /* 鼠标经过链接  添加下划线 */
+        .nav li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>
+            <a href="#">女装</a> /
+            <a href="#">内衣</a> /
+            <a href="#">家具</a>
+        </li>
+        <li>
+            <a href="#">女装</a> /
+            <a href="#">内衣</a> /
+            <a href="#">家具</a>
+        </li>
+        <li>
+            <a href="#">女装</a> /
+            <a href="#">内衣</a> /
+            <a href="#">家具</a>
+        </li>
+        <li>
+            <a href="#">女装</a> /
+            <a href="#">内衣</a> /
+            <a href="#">家具</a>
+        </li>
+        <li>
+            <a href="#">女装</a> /
+            <a href="#">内衣</a> /
+            <a href="#">家具</a>
+        </li>
+    </ul>
+</body>
+
+</html>

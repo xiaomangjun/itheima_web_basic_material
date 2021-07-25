@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box p {
+            /* display: none; */
+            opacity: 0;
+            transition: all .8s;
+        }
+
+        .box:hover p {
+            /* display: block; */
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1. 小细节结尾
+    2. 小兔仙准备
+    3. 5点左右 介绍 课程 就业 学校 等相关问题 -->
+    <div class="box">
+        <p>我是显示的文字</p>
+    </div>
+</body>
+
+</html>

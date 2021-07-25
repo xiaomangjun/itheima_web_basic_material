@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    body {
+      background-color: #eee;
+    }
+
+    .content {
+      width: 1178px;
+      padding: 15px 18px 0;
+      box-sizing: border-box;
+      background-color: #fff;
+      margin: 50px auto;
+      border: 1px solid #ccc;
+      border-top: 2px solid #3983e5;
+    }
+
+    .nav {
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .nav li {
+      float: left;
+      height: 20px;
+      line-height: 20px;
+      margin-right: 15px;
+      border-radius: 8px;
+      font-size: 12px;
+      padding: 0 10px;
+    }
+
+    .nav li.active {
+      background-color: #3983e5;
+    }
+
+    .nav li.active a {
+      color: #fff;
+    }
+
+    .nav li a {
+      color: #3983e5;
+    }
+
+    .con-body {
+      overflow: hidden;
+    }
+
+    .con-body div {
+      float: left;
+    }
+
+    .con-body .b-left {
+      width: 920px;
+    }
+
+    .con-body .b-left li {
+      float: left;
+      width: 220px;
+      height: 160px;
+      position: relative;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .con-body .b-left li img {
+      width: 100%;
+    }
+
+    .con-body .b-right {
+      width: 220px;
+    }
+
+    .con-body .b-right img {
+      width: 100%;
+    }
+
+    .info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 112px;
+      height: 112px;
+      margin-left: -56px;
+      margin-top: -56px;
+      background-color: rgba(0, 0, 0, .5);
+      border-radius: 50%;
+      padding: 30px 5px;
+      box-sizing: border-box;
+    }
+
+    .info h3 {
+      text-align: center;
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, .3);
+      padding-bottom: 4px;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      color: #fff;
+      text-align: center;
+    }
+
+    .info p span {
+      color: #f60;
+      font-size: 20px;
+    }
+
+    .info p sub {
+      font-size: 12px;
+      position: relative;
+      top: -5px;
+    }
+
+    .hot {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 12px;
+      border-radius: 0 0 10px;
+      padding: 6px 11px;
+      background-color: #FF6913;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="nav">
+      <ul>
+        <li class="active"><a href="#">精选</a></li>
+        <li><a href="#">境内</a></li>
+        <li><a href="#">东南亚</a></li>
+        <li><a href="#">欧洲</a></li>
+        <li><a href="#">美洲</a></li>
+        <li><a href="#">澳中东非</a></li>
+      </ul>
+    </div>
+
+    <div class="con-body">
+      <div class="b-left">
+        <ul>
+          <li>
+            <img src="./images/bj.jpg" alt="">
+            <div class="info">
+              <h3>北京</h3>
+              <p>
+                <sup>￥</sup><span>968</span><sub>/人起</sub>
+              </p>
+            </div>
+            <div class="hot">月销200笔</div>
+          </li>
+          <li>
+            <img src="./images/bj.jpg" alt="">
+            <div class="info">
+              <h3>北京</h3>
+              <p>
+                <sup>￥</sup><span>968</span><sub>/人起</sub>
+              </p>
+            </div>
+            <div class="hot">月销200笔</div>
+          </li>
+          <li>
+            <img src="./images/bj.jpg" alt="">
+            <div class="info">
+              <h3>北京</h3>
+              <p>
+                <sup>￥</sup><span>968</span><sub>/人起</sub>
+              </p>
+            </div>
+            <div class="hot">月销200笔</div>
+          </li>
+          <li>
+            <img src="./images/bj.jpg" alt="">
+            <div class="info">
+              <h3>北京</h3>
+              <p>
+                <sup>￥</sup><span>968</span><sub>/人起</sub>
+              </p>
+            </div>
+            <div class="hot">月销200笔</div>
+          </li>
+          <li>
+            <img src="./images/bj.jpg" alt="">
+            <div class="info">
+              <h3>北京</h3>
+              <p>
+                <sup>￥</sup><span>968</span><sub>/人起</sub>
+              </p>
+            </div>
+            <div class="hot">月销200笔</div>
+          </li>
+        </ul>
+      </div>
+      <div class="b-right">
+        <img src="./images/zg0i1d000001e7tc3205C.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

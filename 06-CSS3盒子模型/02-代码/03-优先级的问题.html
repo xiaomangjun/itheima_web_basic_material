@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 10 */
+        /* .nav {
+            color: blue;
+        } */
+
+        /* p {
+            color: red;
+        } */
+        /* 1 */
+        /* div {
+            color: red;
+        } */
+
+        /* 权重是？ 谁是伪类  :hover   11  */
+        /* a:hover {}
+        div:hover{} */
+        /* .nav a {} */
+
+        .nav span {
+            color: red;
+        }
+
+        .nav p span {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 继承的权重是0 ，  孩子有自己的样式优先执行自己的样式 -->
+    <div class="nav">
+        <p>
+            <span>关于优先级</span>
+        </p>
+    </div>
+</body>
+
+</html>

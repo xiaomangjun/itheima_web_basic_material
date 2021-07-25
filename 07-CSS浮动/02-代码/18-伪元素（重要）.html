@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /* 他们中间有空格吗  a:hover */
+        /* ::before 伪元素创建了一个盒子， 放到了盒子内部的前面 */
+        .box::before {
+            /* 有一个必须写的属性 content 内容 */
+            content: '我';
+            /* width: 100px;
+            height: 30px;
+            background-color: purple; */
+        }
+
+        .box::after {
+            content: "pink老师";
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"> 是 </div>
+
+</body>
+
+</html>
